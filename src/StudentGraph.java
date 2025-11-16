@@ -85,7 +85,7 @@ public class StudentGraph {
          */
         public Edge(UniversityStudent neighbor, int weight){
             this.neighbor = neighbor;
-            this.weight = weight;
+            this.weight = weight ;
         }
     }
 
