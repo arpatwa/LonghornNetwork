@@ -1,7 +1,11 @@
 import java.util.*;
 import java.util.concurrent.*;
 
-// Main.java - Self-contained testing & grading with multiple built‑in test cases.
+/**
+ * Self-contained testing & grading with multiple built‑in test cases from Ayush.
+ *
+ */
+
 public class Main {
     public static void main(String[] args) {
         // Create a list of test cases.
