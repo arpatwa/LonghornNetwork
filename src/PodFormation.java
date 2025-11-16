@@ -4,12 +4,15 @@ import java.util.*;
  * Forms small groups of students based on connection strength.
  */
 public class PodFormation {
+    private StudentGraph graph;
+
     /**
      * Creates a new pod formation helper for given graph.
      * @param graph is the {@link StudentGraph} that has all students and edges
      */
     public PodFormation(StudentGraph graph) {
         // Constructor
+        this.graph = graph;
     }
 
     /**

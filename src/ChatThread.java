@@ -3,6 +3,9 @@
  * two {@link UniversityStudent}s.
  */
 public class ChatThread implements Runnable {
+    private UniversityStudent sender;
+    private UniversityStudent receiver;
+    private String message;
     /**
      * This is the constructor for a ChatThread object
      * @param sender is the student who sends a message
@@ -11,6 +14,9 @@ public class ChatThread implements Runnable {
      */
     public ChatThread(UniversityStudent sender, UniversityStudent receiver, String message) {
         // Constructor
+        this.sender = sender;
+        this.receiver = receiver;
+        this.message = message;
     }
 
     /**

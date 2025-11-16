@@ -58,13 +58,13 @@ public class StudentGraph {
      * Returns all students in the graph.
      * @return a set of all students (nodes) that are in the StudentGraph
      */
-    public Set<UniversityStudent> getAllNode(){
+    public Set<UniversityStudent> getAllNodes(){
         return null;
     }
 
     /**
      * Prints text version of the Longhorn Network StudentGraph.
-     * Needed becasue called in main.
+     * Needed because called in main.
      */
     public void displayGraph(){
     }

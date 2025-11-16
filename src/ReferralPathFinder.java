@@ -4,9 +4,10 @@ import java.util.*;
  * Finds internship refferals using shortest path in {@link StudentGraph}.
  *
  * Will start at one {@link UniversityStudent} and looks for the most closely related student
- * that has previsouly worked at the target company.
+ * that has previously worked at the target company.
  */
 public class ReferralPathFinder {
+    private StudentGraph graph;
     /**
      * Creates a new referral pathfinder for the given student graph.
      * @param graph is the StudentGraph for LonghornNetwork
