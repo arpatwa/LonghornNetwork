@@ -4,7 +4,9 @@
  * Many instances of this class can be run on different threads.
  */
 public class FriendRequestThread implements Runnable {
+    /**The student sending the friends request*/
     private UniversityStudent sender;
+    /** Student who the friend request is sent to*/
     private UniversityStudent receiver;
     /**
      * Constructor for a new friend request thread

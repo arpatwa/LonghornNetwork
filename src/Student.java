@@ -6,13 +6,21 @@ import java.util.*;
  * and referrals for jobs.
  */
 public abstract class Student {
+    /** This student's name*/
     protected String name;
+    /** This student's age*/
     protected int age;
+    /** This student's gender*/
     protected String gender;
+    /** This student's grade level*/
     protected int year;
+    /** This student's major*/
     protected String major;
+    /** This student's GPA*/
     protected double gpa;
+    /** This student's roommate prefs*/
     protected List<String> roommatePreferences;
+    /** This student's previous internships/jobs*/
     protected List<String> previousInternships;
 
     /**

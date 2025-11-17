@@ -3,8 +3,11 @@
  * two {@link UniversityStudent}s.
  */
 public class ChatThread implements Runnable {
+    /** The student who sends a message*/
     private UniversityStudent sender;
+    /** Student who sends a message*/
     private UniversityStudent receiver;
+    /** Message to send*/
     private String message;
     /**
      * This is the constructor for a ChatThread object

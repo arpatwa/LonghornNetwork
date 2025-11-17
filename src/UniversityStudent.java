@@ -6,9 +6,21 @@ import java.util.*;
  * Will represent a single student who participates in the Longhorn Network.
  */
 public class UniversityStudent extends Student {
-
+    /** The current student's roommate*/
     private UniversityStudent roommate;
 
+    /**
+     * Default UniversityStudent constructor.
+     *
+     * @param name is the student's name
+     * @param age how old student is
+     * @param gender student's gender
+     * @param year student's grade level
+     * @param major student's major
+     * @param gpa student's GPA
+     * @param roommatePrefs student's roommate preferences
+     * @param prevInternships student's previous internships/jobs
+     */
     UniversityStudent(String name, int age, String gender, int year,
                       String major, double gpa, List<String> roommatePrefs, List<String> prevInternships) {
         // Constructor

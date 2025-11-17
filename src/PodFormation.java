@@ -4,6 +4,7 @@ import java.util.*;
  * Forms small groups of students based on connection strength.
  */
 public class PodFormation {
+    /** Longhorn Network graph of student data*/
     private StudentGraph graph;
 
     /**

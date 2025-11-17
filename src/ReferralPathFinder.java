@@ -7,6 +7,7 @@ import java.util.*;
  * that has previously worked at the target company.
  */
 public class ReferralPathFinder {
+    /** Longhorn Network graph of student data */
     private StudentGraph graph;
     /**
      * Creates a new referral pathfinder for the given student graph.
