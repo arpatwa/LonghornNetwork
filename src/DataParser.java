@@ -23,8 +23,8 @@ public class DataParser {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         String line;
         String name = ""; String gender  = ""; String major = "";
-        Integer age =0; Integer year = 0;
-        Double gpa = 0.0;
+        Integer age =null; Integer year = null;
+        Double gpa = null;
         List<String> roommatePreferences = new ArrayList<>(); List<String> previousInternships = new ArrayList<>();
         while((line = reader.readLine()) != null) {
             line=line.trim();
@@ -34,7 +34,8 @@ public class DataParser {
             if (line.equals("Student:")) {
                 if (!name.isEmpty()) {
                     // Check if all other fields are full
-                    if (gender.isEmpty() || major.isEmpty() || age == 0 || year == 0 || gpa == 0.0) {
+                    if (gender.isEmpty() || major.isEmpty() || age == null || year == null ||
+                            gpa == null  || roommatePreferences.isEmpty()) {
                         throw new IllegalArgumentException("Missing required field for student: " + name);
                     }
 
@@ -141,8 +142,9 @@ public class DataParser {
         // Adding last student when no new next line (next line is empty)
         if (!name.isEmpty()) {
             // Check if all other fields are full
-            if (gender.isEmpty() || major.isEmpty() || age == 0 || year == 0 || gpa == 0.0) {
-                throw new IllegalArgumentException("Missing required field for student: " + name);
+            if (gender.isEmpty() || major.isEmpty() || age == null || year == null ||
+                    gpa == null  || roommatePreferences.isEmpty()) {
+                throw new IllegalArgumentException("Missing required field in student entry for " + name +".");
             }
 
             // Create new student bc onto the next one

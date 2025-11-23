@@ -8,6 +8,8 @@ import java.util.*;
 public class UniversityStudent extends Student {
     /** The current student's roommate*/
     private UniversityStudent roommate;
+    private Set<UniversityStudent> friends;
+    private Map<UniversityStudent, List<String>> chats;
 
     /**
      * Default UniversityStudent constructor.
@@ -23,33 +25,100 @@ public class UniversityStudent extends Student {
      */
     UniversityStudent(String name, int age, String gender, int year,
                       String major, double gpa, List<String> roommatePrefs, List<String> prevInternships) {
-        // Constructor
+        // Constructor initialize fields
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.year = year;
+        this.major = major;
+        this.gpa = gpa;
+        this.friends = new HashSet<>();
+        this.chats = new HashMap<>();
+        // Defensive copy each list in case
+        this.roommatePreferences = new ArrayList<>(roommatePrefs);
+        this.previousInternships = new ArrayList<>(prevInternships);
     }
+
     /**
-     * Computes the strength of connection between this student and another student.
-     * @param other is the student to compare to
-     * @return an integer that gives the connection strength of the two students
+     * @return student name
      */
-    @Override
-    public int calculateConnectionStrength(Student other) {
-        return 0;
+    public String getName() {
+        return this.name;
     }
-    // TODO: Constructor and additional methods to be implemented
+
+    /**
+     * @return student gpa
+     */
+    public double getGPA() {
+        return this.gpa;
+    }
+
+    /**
+     * @return student major
+     */
+    public String getMajor() {
+        return this.major;
+    }
+
+    /**
+     * @return student's previous internships
+     */
+    public List<String> getPreviousInternships() {
+        return previousInternships;
+    }
+
+    /**
+     * @return student year in university
+     */
+    public int getYear() {
+        return this.year;
+    }
+
+    /**
+     * @return student gender
+     */
+    public String getGender() {
+        return this.gender;
+    }
+
+    /**
+     * @return student age
+     */
+    public int getAge() {
+        return this.age;
+    }
+
+    public synchronized void addFriend(UniversityStudent friend) {
+        this.friends.add(friend);
+    }
+
+    public synchronized void addChat(UniversityStudent friend, String message) {
+        if (!chats.containsKey(friend)) {
+            chats.put(friend, new ArrayList<>());
+        }
+        chats.get(friend).add(message);
+    }
+
+    public synchronized List<String> getChats(UniversityStudent friend) {
+        // Get chats between this and the specified friend
+        return new ArrayList<>(chats.getOrDefault(friend, new ArrayList<>()));
+    }
+
 
     /**
      * Will get student roommate
      * @return the roommate of the student
      */
-    public UniversityStudent getRoommate() {
-        return null;
+    public synchronized UniversityStudent getRoommate() {
+        return this.roommate;
     }
 
     /**
      * Sets a student's roommate
      * @param roommate the person who is the roommate of the student
      */
-    public void setRoommate(UniversityStudent roommate) {
-
+    public synchronized void setRoommate(UniversityStudent roommate) {
+        this.roommate = roommate;
     }
 
     /**
@@ -57,10 +126,62 @@ public class UniversityStudent extends Student {
      * @return a string of student data
      */
     public String toString() {
-        return null;
+        return "University Student{name='" + this.name + '\'' + ", age=" + this.age + ", gender='" + this.gender + '\''
+                + ", year=" + this.year + ", major='" + this.major + '\'' + ", GPA=" + this.gpa +
+                ", roommatePreferences=" + this.roommatePreferences + ", previousInternships="
+                + this.previousInternships +"}";
     }
 
+    /**
+     * Computes the strength of connection between this student and another student.
+     * @param other is the student to compare to
+     * @return an integer that gives the connection strength of the two students
+     */
+    @Override
+    public int calculateConnectionStrength(Student other) {
+        int connectionStrength = 0;
+        if (!(other instanceof UniversityStudent)) return 0;
 
+        // Boxing
+        UniversityStudent o = (UniversityStudent) other;
+
+        // Check conditions and calc score
+        // Same age: +1
+        if (this.getAge() == o.getAge()) {
+            connectionStrength += 1;
+        }
+
+        // Same major +2
+        if (this.getMajor().equals(o.getMajor())) {
+            connectionStrength += 2;
+        }
+
+        // Shared internships +3 for each
+        for (String internship: this.getPreviousInternships()) {
+            if (o.getPreviousInternships().contains(internship)) {
+                connectionStrength += 3;
+            }
+        }
+
+        // Roommates
+        if (this.roommate!=null && this.getRoommate().equals(o.getRoommate())) {
+            connectionStrength += 4;
+        }
+        return connectionStrength;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UniversityStudent that = (UniversityStudent) o; // casting
+        return Objects.equals(this.getName(), that.getName()); // No 2 students can have the same name
+    }
+
+    @Override
+    public int hashCode() {
+        return this.getName().hashCode();
+    }
 
 }
 

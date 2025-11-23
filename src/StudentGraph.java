@@ -21,6 +21,22 @@ public class StudentGraph {
      */
     public StudentGraph(List<UniversityStudent> students) {
         // Build graph using calc Connection strength and addEdge
+        for (UniversityStudent student : students) {
+            addStudent(student);
+        }
+
+        // Get the connection weight for a pair of students
+        for (int i =0; i <students.size(); i++) {
+            for (int j = i+1; j < students.size(); j++) {
+                UniversityStudent first = students.get(i);
+                UniversityStudent second = students.get(j);
+                int weight = first.calculateConnectionStrength(second);
+                // Check for positive value weight only
+                if (weight > 0) {
+                    addEdge(first, second, weight);
+                }
+            }
+        }
     }
 
     /**
@@ -29,7 +45,8 @@ public class StudentGraph {
      * @param student to be added
      */
     public void addStudent(UniversityStudent student) {
-
+        // If student isn't in the adjacency list, add them
+        adjList.putIfAbsent(student, new ArrayList<>());
     }
 
     /**
@@ -41,7 +58,13 @@ public class StudentGraph {
      */
     public void addEdge(UniversityStudent student1, UniversityStudent student2, int weight) {
         // Call from constructor logic
-
+        // Extra check if student not in graph for some reason
+        if (!adjList.containsKey(student1) ||  !adjList.containsKey(student2)) {
+            throw new IllegalArgumentException("Student doesn't exist");
+        }
+        // Add weight to both students
+        adjList.get(student1).add(new Edge(student2, weight));
+        adjList.get(student2).add(new Edge(student1, weight));
     }
 
     /**
@@ -51,7 +74,8 @@ public class StudentGraph {
      * @return a list of the student's neighbors, if any
      */
     public List<Edge> getNeighbors(UniversityStudent student) {
-        return null;
+        // Gets all students who have valid edge with another student in the adj list
+        return adjList.getOrDefault(student, new ArrayList<>());
     }
 
     /**
@@ -59,7 +83,7 @@ public class StudentGraph {
      * @return a set of all students (nodes) that are in the StudentGraph
      */
     public Set<UniversityStudent> getAllNodes(){
-        return null;
+        return  adjList.keySet(); // keys = nodes = students
     }
 
     /**
@@ -67,6 +91,20 @@ public class StudentGraph {
      * Needed because called in main.
      */
     public void displayGraph(){
+        System.out.println();
+        System.out.println("Longhorn Network Student Graph:");
+        for (UniversityStudent student : getAllNodes()){
+            System.out.print(student.getName() +" --> [");
+            Iterator<Edge> iterator = getNeighbors(student).iterator();
+            while(iterator.hasNext()){
+                // Get next neighbor
+                Edge edge = iterator.next();
+                // Print neighbor and weight
+                System.out.print("("+edge.neighbor.getName() + ", " + edge.weight +")");
+                if (iterator.hasNext()) System.out.print(", ");
+            }
+            System.out.println("]");
+        }
     }
 
     /**
@@ -88,7 +126,4 @@ public class StudentGraph {
             this.weight = weight ;
         }
     }
-
-
-
 }
