@@ -5,6 +5,6 @@
     <option name="OPTION_SCOPE" value="private" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_24" project-jdk-name="25" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/testing" />
+    <output url="file://$PROJECT_DIR$/src" />
   </component>
 </project>
