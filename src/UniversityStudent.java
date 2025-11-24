@@ -114,6 +114,13 @@ public class UniversityStudent extends Student {
     }
 
     /**
+     * Gets roommate prefs for current student
+     */
+    public synchronized List<String> getRoommatePreferences() {
+        return new ArrayList<>(this.roommatePreferences);
+    }
+
+    /**
      * Sets a student's roommate
      * @param roommate the person who is the roommate of the student
      */
