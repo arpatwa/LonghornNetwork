@@ -6,7 +6,7 @@ import java.util.concurrent.*;
  *
  */
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         // Create a list of test cases.
         List<List<UniversityStudent>> testCases = new ArrayList<>();
