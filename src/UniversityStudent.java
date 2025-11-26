@@ -121,6 +121,13 @@ public class UniversityStudent extends Student {
     }
 
     /**
+     * Get a student's friends
+     */
+    public synchronized List<UniversityStudent> getFriends() {
+        return new ArrayList<>(this.friends);
+    }
+
+    /**
      * Sets a student's roommate
      * @param roommate the person who is the roommate of the student
      */
