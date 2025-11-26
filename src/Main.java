@@ -152,6 +152,11 @@ public class Main{
         // Test GaleShapley (20 pts)
         try {
             GaleShapley.assignRoommates(students);
+            for (UniversityStudent student : students) {
+                if (student.getRoommate() != null) {
+                    System.out.println(student.getName() + " is roommates with "+ student.getRoommate().getName());
+                }
+            }
             // Count unpaired students. In an even-sized group, there should be none;
             // in odd-sized groups, at most one can remain unpaired.
             int unpairedCount = 0;
