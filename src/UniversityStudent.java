@@ -99,6 +99,11 @@ public class UniversityStudent extends Student {
         chats.get(friend).add(message);
     }
 
+    /**
+     * Adds chats between 2 students
+     * @param friend who wants to get chats
+     * @return list of chats
+     */
     public synchronized List<String> getChats(UniversityStudent friend) {
         // Get chats between this and the specified friend
         return new ArrayList<>(chats.getOrDefault(friend, new ArrayList<>()));
@@ -115,6 +120,7 @@ public class UniversityStudent extends Student {
 
     /**
      * Gets roommate prefs for current student
+     * @return roommate prefs
      */
     public synchronized List<String> getRoommatePreferences() {
         return new ArrayList<>(this.roommatePreferences);
@@ -122,6 +128,7 @@ public class UniversityStudent extends Student {
 
     /**
      * Get a student's friends
+     * @return list of friends
      */
     public synchronized List<UniversityStudent> getFriends() {
         return new ArrayList<>(this.friends);

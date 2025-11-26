@@ -102,6 +102,11 @@ public class GaleShapley {
                 }
             }
         }
+        for (UniversityStudent student : students) {
+            if (student.getRoommate() != null) {
+                System.out.println(student.getName() + " is roommate with " + student.getRoommate().getName());
+            }
+        }
 
     }
 }
