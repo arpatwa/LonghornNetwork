@@ -8,7 +8,7 @@ import java.util.*;
 public class UniversityStudent extends Student {
     /** The current student's roommate*/
     private UniversityStudent roommate;
-    private Set<UniversityStudent> friends;
+    private List<UniversityStudent> friends;
     private Map<UniversityStudent, List<String>> chats;
 
     /**
@@ -32,7 +32,7 @@ public class UniversityStudent extends Student {
         this.year = year;
         this.major = major;
         this.gpa = gpa;
-        this.friends = new HashSet<>();
+        this.friends = new ArrayList<>();
         this.chats = new HashMap<>();
         // Defensive copy each list in case
         this.roommatePreferences = new ArrayList<>(roommatePrefs);
@@ -89,7 +89,9 @@ public class UniversityStudent extends Student {
     }
 
     public synchronized void addFriend(UniversityStudent friend) {
-        this.friends.add(friend);
+        if (!friends.contains(friend)) {
+            friends.add(friend);
+        }
     }
 
     public synchronized void addChat(UniversityStudent friend, String message) {
@@ -101,7 +103,7 @@ public class UniversityStudent extends Student {
 
     /**
      * Adds chats between 2 students
-     * @param friend who wants to get chats
+     * //@param friend who wants to get chats
      * @return list of chats
      */
     public synchronized List<String> getChats(UniversityStudent friend) {
@@ -131,7 +133,7 @@ public class UniversityStudent extends Student {
      * @return list of friends
      */
     public synchronized List<UniversityStudent> getFriends() {
-        return new ArrayList<>(this.friends);
+        return new ArrayList<>(friends);
     }
 
     /**

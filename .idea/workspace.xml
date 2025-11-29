@@ -5,48 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c4c79c9-d3b8-4bfd-95e3-d3688cb7e142" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LonghornNetwork/NetworkLabUI$GraphPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LonghornNetwork/NetworkLabUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetworkLabUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/ChatThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/ChatThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/DataParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/DataParser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/FriendRequestThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/FriendRequestThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/GaleShapley.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/GaleShapley.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/PodFormation.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/PodFormation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/ReferralPathFinder.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/ReferralPathFinder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/Student.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/Student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/StudentGraph.Edge.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/StudentGraph.Edge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/StudentGraph.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/StudentGraph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/UniversityStudent.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/UniversityStudent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/javadocs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/javadocs/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LonghornNetwork/GaleShapley.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LonghornNetwork/GaleShapley.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LonghornNetwork/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LonghornNetwork/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LonghornNetwork/UniversityStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LonghornNetwork/UniversityStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GaleShapley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GaleShapley.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UniversityStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniversityStudent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,27 +36,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Testing.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Anya-Branch",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NetworkLabUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Testing.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Anya-Branch&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.NetworkLabUI">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LonghornNetwork" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkLabUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NetworkLabUI" />
+      <module name="LonghornNetwork" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Testing" />
       <module name="LonghornNetwork" />
@@ -103,6 +81,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NetworkLabUI" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Testing" />
       </list>
     </recent_temporary>
@@ -122,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764105388860</updated>
-      <workItem from="1764105390891" duration="11834000" />
+      <workItem from="1764105390891" duration="32852000" />
     </task>
     <servers />
   </component>
