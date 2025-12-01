@@ -209,6 +209,7 @@ public class NetworkLabUI extends JFrame {
                 tabs.setSelectedIndex(1);
             }
         });
+
         refCaseSelector.addActionListener(e -> {
             int idx = refCaseSelector.getSelectedIndex();
             List<UniversityStudent> data = testCases.get(idx);
